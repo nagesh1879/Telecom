@@ -9,7 +9,7 @@
 FROM python
 WORKDIR /telecomfiles
 COPY requirements.txt /telecomfiles
-EXPOSE 8000
+EXPOSE 9000
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip3 install -r requirements.txt
 COPY . /telecomfiles
